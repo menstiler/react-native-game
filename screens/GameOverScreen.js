@@ -30,9 +30,11 @@ function GameOverScreen({ roundsNumber, userNumber, onStartNewGame }) {
     borderRadius: imageSize / 2,
   };
 
+  const marginToDistance = height < 400 ? 5 : 30;
+
   return (
     <ScrollView style={styles.screen}>
-      <View style={styles.rootContainer}>
+      <View style={[styles.rootContainer, { marginTop: marginToDistance }]}>
         <Title>GAME OVER!</Title>
         <View style={[styles.imageContainer, imageStyle]}>
           <Image

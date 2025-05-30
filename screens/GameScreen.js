@@ -128,6 +128,7 @@ function GameScreen({ userNumber, onGameOver }) {
       </>
     );
   }
+
   return (
     <View style={styles.screen}>
       <Title>Opponent's Guess</Title>
@@ -155,6 +156,7 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 24,
     alignItems: "center",
+    marginTop: 30,
   },
   instructionText: {
     marginBottom: 12,
